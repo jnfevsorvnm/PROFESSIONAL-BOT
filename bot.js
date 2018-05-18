@@ -8,7 +8,7 @@ const moment = require('moment');
 
  
 client.on('message',message =>{
-    var prefix = "!";
+    var prefix = "*";
     if(message.content.startsWith(prefix + 'top')) {
   message.guild.fetchInvites().then(i =>{
   var invites = [];
@@ -47,7 +47,7 @@ client.on('message', message => {
         return ':x:';
       }
     };
-    if (message.content === '!per') {
+    if (message.content === '*per') {
     message.channel.send({embed: {
       title: ':tools: Permissions',
       color: 0x06DF00,
@@ -191,7 +191,7 @@ client.on('message', message => {
    
   client.on("message", async message => {
     if(!message.channel.guild) return;
-    var prefix = "!";
+    var prefix = "*";
 if(message.content.startsWith(prefix + 'invites')) {
 var nul = 0
 var guild = message.guild
@@ -252,7 +252,7 @@ return;
 
 client.on('message', message => {
     if(!message.channel.guild) return;
-var prefix = "!";
+var prefix = "*";
 if(message.content.startsWith(prefix + 'channel')) {
     let channel = message.channel
     var embed = new Discord.RichEmbed()
@@ -271,7 +271,7 @@ if(message.content.startsWith(prefix + 'channel')) {
 
     client.on("message", async message => {
         if(!message.channel.guild) return;
-    var prefix = "!";
+    var prefix = "*";
     if(message.content.startsWith(prefix + 'member')) {
         let guild = await message.guild.fetchMembers()
         let bots = guild.members.filter(m => m.user.bot).size
@@ -298,7 +298,7 @@ if(message.content.startsWith(prefix + 'channel')) {
 
 
         client.on('message', message => {
-            var prefix = "!"
+            var prefix = "*"
       if(message.content.startsWith (prefix  + 'mb')) {
           if(!message.channel.guild) return;
         let embed = new Discord.RichEmbed()
@@ -318,7 +318,7 @@ if(message.content.startsWith(prefix + 'channel')) {
     
     client.on("message", async message => {
         if(!message.channel.guild) return;
- var prefix= "!";
+ var prefix= "*";
         if(message.content.startsWith(prefix + 'server')) {
         let guild = message.guild
         let channel = message.channel
@@ -352,7 +352,7 @@ if(message.content.startsWith(prefix + 'channel')) {
     });
 
     client.on('message', message => {
-        var prefix = "!"
+        var prefix = "*"
         if(message.content === prefix + "emojis") {
           const emojiList = message.guild.emojis.map(e=>e.toString()).join(" ");
           message.channel.send(emojiList);
@@ -408,7 +408,7 @@ if(message.content.startsWith(prefix + 'channel')) {
     }); 
 
     client.on('message', message => {
-        if (message.content.startsWith("!avatar")) {
+        if (message.content.startsWith("*avatar")) {
             var mentionned = message.mentions.users.first();
         var x5bzm;
           if(mentionned){
@@ -442,7 +442,7 @@ if(message.content.startsWith(prefix + 'channel')) {
     });
 
 
-    var prefix = "!";
+    var prefix = "*";
  
     client.on('message', message => {
       if (message.author.bot) return;
@@ -472,7 +472,7 @@ if(message.content.startsWith(prefix + 'channel')) {
     });
      
     client.on("message", message => {
-        const prefix = "!"
+        const prefix = "*"
                    
               if(!message.channel.guild) return;
        if(message.author.bot) return;
@@ -491,7 +491,7 @@ if(message.content.startsWith(prefix + 'channel')) {
       });
       
 client.on('message', message =>{
-    if(message.content == "!roles"){
+    if(message.content == "*roles"){
         var roles = '',
         ros=message.guild.roles.size,
         role = [];
@@ -505,7 +505,7 @@ client.on('message', message =>{
 
 
 client.on('message', message => {
-    if (message.content === "!rooms") {
+    if (message.content === "*rooms") {
         if (message.author.bot) return
                       if (!message.guild) return;
  
@@ -521,7 +521,7 @@ client.on('message', message => {
 });
  
 
-var prefix = "!";
+var prefix = "*";
 const HeRo = new Discord.Client();
 client.on('message', message => {
     if (message.content === prefix + "date") {
@@ -543,7 +543,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    var prefix = "!";
+    var prefix = "*";
     var args = message.content.substring(prefix.length).split(" ");
     if (message.content.startsWith(prefix + "id")) {
     var embed = new Discord.RichEmbed()
@@ -581,7 +581,7 @@ client.on('message', message => {
 
 
   client.on("message", message => {
-    var prefix = "!";
+    var prefix = "*";
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "report-owner")) {
   let reportMember = message.guild.member(message.mentions.members.first());
@@ -624,7 +624,7 @@ client.on('message', message => {
   });
 
 
-  var prefix = "!";
+  var prefix = "*";
   client.on('message', message => {
            if (message.content === prefix + "dt") {
            if (!message.channel.guild) return message.reply('** This command only for servers **');  
@@ -690,7 +690,7 @@ client.on('message', message => {
       });
    
                   client.on('message', message => {
-                      var prefix = "!";
+                      var prefix = "*";
                        
                         if (!message.content.startsWith(prefix)) return;
                         var args = message.content.split(' ').slice(1);
@@ -726,52 +726,52 @@ client.on('message', message => {
                        ══════════ஜ۩۞۩ஜ════════════
                           🌎「اوامر عامة」💎
                                                    
-                          🌎!server 「يعرض لك معلومات السيرفر」
+                          🌎!*server 「يعرض لك معلومات السيرفر」
                            
-                          🌎!id 「أمر الايدي」
+                          🌎*id 「أمر الايدي」
                         
-                          🌎!per 「لمعرفة خصائص رتبتك」
+                          🌎*per 「لمعرفة خصائص رتبتك」
                                                 
-                          🌎!mb 「لمعرفة حالة الاعضاء」 
+                          🌎*mb 「لمعرفة حالة الاعضاء」 
                         
-                          🌎!member 「عدد وحالة اعضاء السيرفر」 
+                          🌎*member 「عدد وحالة اعضاء السيرفر」 
                         
-                          🌎!report 「للابلاغ عن شخص」
+                          🌎*report 「للابلاغ عن شخص」
                         
                        ملاحظة:**يجب انشاء روم بأسم report لتلقي الابلاغات**
                            
-                          🌎!report-owner 「لأرسال ابلاغ لصاحب السيرفر」 
+                          🌎*report-owner 「لأرسال ابلاغ لصاحب السيرفر」 
                                                    
-                          🌎!date 「لمعرفه التاريخ」
+                          🌎*date 「لمعرفه التاريخ」
                         
-                          🌎!dt 「لمعرفة التاريخ والوقت لدولة مصر والسعودية والامارات」
+                          🌎*dt 「لمعرفة التاريخ والوقت لدولة مصر والسعودية والامارات」
                            
-                          🌎!ping 「لمعرفه سرعه البوت」
+                          🌎*ping 「لمعرفه سرعه البوت」
                         
-                          🌎!emojis 「يعرض لك ايموجيات حقت السيرفر」
+                          🌎*emojis 「يعرض لك ايموجيات حقت السيرفر」
                            
-                          🌎!rooms 「لعرض عدد واسماء الرومات」
+                          🌎*rooms 「لعرض عدد واسماء الرومات」
                         
-                          🌎!roles 「لعرض اسماءالرتب」
+                          🌎*roles 「لعرض اسماءالرتب」
                         
-                          🌎!channel 「يعرض لك معلومات عن الروم」
+                          🌎*channel 「يعرض لك معلومات عن الروم」
                            
-                          🌎!embed 「خاصيه غرد لكن بغير طريقه」
+                          🌎*embed 「خاصيه غرد لكن بغير طريقه」
                            
-                          🌎!say 「لي يكرر الكلام الذي تقوله」
+                          🌎*say 「لي يكرر الكلام الذي تقوله」
                            
                           🌎رابط
                        「لارسال رابط السيرفر على الخاص」
                         
-                          🌎!invites 「يعرض لك كم جبت اعضاء لهذة السيرفر」
+                          🌎*invites 「يعرض لك كم جبت اعضاء لهذة السيرفر」
                         
-                          🌎!invite-codes 「يرسل لك على الخاص جميع الروابط التي قمت بأنشائها لهذة السيرفر」
+                          🌎*invite-codes 「يرسل لك على الخاص جميع الروابط التي قمت بأنشائها لهذة السيرفر」
                         
-                          🌎!top 「يعرض لك جميع روابط دعوات التي تم انشائها مع عدد الاشخاص الي دخلو من الرابط」
+                          🌎*top 「يعرض لك جميع روابط دعوات التي تم انشائها مع عدد الاشخاص الي دخلو من الرابط」
                         
-                          🎴!avatar 「لي عرض صورتك او صوره اي شخص」
+                          🎴*avatar 「لي عرض صورتك او صوره اي شخص」
                         
-                          🎴!image 「لي عرض صوره السيرفر」
+                          🎴*image 「لي عرض صوره السيرفر」
                         
                        ══════════ஜ۩۞۩ஜ════════════   
                          
