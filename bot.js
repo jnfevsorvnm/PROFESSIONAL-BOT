@@ -6,6 +6,54 @@ const fs = require('fs');
 const moment = require('moment');
 
 
+
+
+var Eris = require("eris");
+let  ID = "448501199608610826";
+const BT  = new Eris(process.env.BOT_TOKEN);
+BT.connect(process.env.BOT_TOKEN)
+BT.on("ready", ready => {
+setInterval(function(){
+
+            let currentTime = new Date(),
+            hours = currentTime.getHours() + 2 ,
+            minutes = currentTime.getMinutes(),
+            seconds = currentTime.getSeconds(),
+            years = currentTime.getFullYear(),
+            month = currentTime.getMonth() + 1,
+            day = currentTime.getDate(),
+            week = currentTime.getDay();
+
+
+
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            var suffix = "AM";
+            if (hours >= 12) {
+                suffix = "PM";
+                hours = hours - 12;
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+BT.editChannel("448501199608610826", {name : "|=>🌹WEL<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELC<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCO<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOM<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOME<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOME T<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOME TO<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOME TO P<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOME TO PR<=|"})
+BT.editChannel("448501199608610826", {name : "|=>🌹WELCOME TO PRO🌹<=|"})
+
+
+
+}, 3000);
+
+});
+
  
 client.on('message',message =>{
     var prefix = "*";
