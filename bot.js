@@ -37,16 +37,16 @@ setInterval(function(){
             if (hours == 0) {
                 hours = 12;
             }
-BT.editChannel("448501199608610826", {name : "🌹WEL"})
-BT.editChannel("448501199608610826", {name : "🌹WELC"})
-BT.editChannel("448501199608610826", {name : "🌹WELCO"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOM"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOME"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOME T"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOME TO"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOME TO D"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOME TO DR"})
-BT.editChannel("448501199608610826", {name : "🌹WELCOME TO DRK🌹"})
+BT.editChannel("460691186865143808", {name : "🌹WEL"})
+BT.editChannel("460691186865143808", {name : "🌹WELC"})
+BT.editChannel("460691186865143808", {name : "🌹WELCO"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOM"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOME"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOME T"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOME TO"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOME TO D"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOME TO DR"})
+BT.editChannel("460691186865143808", {name : "🌹WELCOME TO DRK🌹"})
 
 
 
